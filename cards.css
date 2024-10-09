@@ -1,0 +1,86 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 30px;
+}
+
+.card {
+  background-color: #fff;
+  color: hsl(233, 13%, 49%);
+  border-radius: 0.8rem;
+}
+
+.cards .card.active {
+  background: linear-gradient(135deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%) 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+ul {
+  margin: 2.6rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul li {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+ul li.price {
+  font-size: 3rem;
+  color: hsl(232, 13%, 33%);
+  padding-bottom: 2rem;
+  font-weight: bold;
+}
+
+.shadow{
+  box-shadow: -5px 5px 15px 1px rgba(0, 0, 0, 0.1);
+}
+
+.card.active .price{
+  color: #fff;
+}
+
+.btn{
+  margin-top: 1rem;
+  height: 2.6rem;
+  width: 13.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: linear-gradient(135deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%) 100%);
+  color: #fff;
+  outline: none;
+  border: 0;
+  font-weight: bold;
+}
+
+.active-btn{
+  color: hsl(232, 13%, 33%);
+  background: #fff;
+}
+
+.bottom-bar{
+  border-bottom: 2px solid hsla(230, 9%, 38%, 0.4);
+}
+
+.card.active .bottom-bar{
+  border-bottom: 2px solid hsla(0, 0%, 98%, 0.4);
+}
+
+.pack{
+  font-size: 1.1rem;
+  font-weight: 400;
+}
