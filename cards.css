@@ -4,7 +4,12 @@
   align-items: center;
   flex-wrap: wrap;
   margin-top: 35px;
-  
+  margin-bottom: 30px;
+
+}
+
+#card-container {
+  height: 80vh;
 }
 
 .card {
@@ -20,7 +25,7 @@
   align-items: center;
   transform: scale(1.1);
   z-index: 1;
-  
+
 }
 
 ul {
@@ -46,15 +51,15 @@ ul li.price {
   font-weight: bold;
 }
 
-.shadow{
+.shadow {
   box-shadow: -7px 5px 15px 1px rgba(0, 0, 0, 0.1);
 }
 
-.card.active .price{
+.card.active .price {
   color: #fff;
 }
 
-.btn{
+.btn {
   margin-top: 1rem;
   height: 2.6rem;
   width: 13.3rem;
@@ -69,20 +74,44 @@ ul li.price {
   font-weight: bold;
 }
 
-.active-btn{
+.active-btn {
   color: hsl(232, 13%, 33%);
   background: #fff;
 }
 
-.bottom-bar{
+.bottom-bar {
   border-bottom: 2px solid hsla(230, 9%, 38%, 0.4);
 }
 
-.card.active .bottom-bar{
+.card.active .bottom-bar {
   border-bottom: 2px solid hsla(0, 0%, 98%, 0.4);
 }
 
-.pack{
+.pack {
   font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 10px;
+  }
+
+  .sub-type {
+    font-size: 10px;
+    font-size: 13px;
+    color: #a49eda;
+    font-weight: bold;
+  }
+
+  ul li.price {
+    font-size: 2rem;
+  }
+
+  .cards .card.active {
+    background: linear-gradient(135deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%) 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
 }
