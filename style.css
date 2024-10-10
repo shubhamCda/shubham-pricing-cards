@@ -19,6 +19,7 @@ body {
   align-items: center;
   overflow-x: hidden;
   /* height: 100%; */
+  padding-top: 20px;
 }
 
 header {
